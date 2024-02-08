@@ -1,0 +1,123 @@
+:root{
+    --bg-pagina: #dbdbdb;
+    --bg-container: #fff;
+    --color-container: #1e1c1c;
+    --bg-input: #ffffff;
+    --color-input: #000;
+    --bg-button: #12852a;
+    --color-button: #fff;
+    --bg-button-hover: #0c4819;
+    --color-esqueceu-senha-hover: #000;
+}
+[data-tema="dark"]{
+    --bg-pagina: #242323;
+    --bg-container: #1a1919;
+    --color-container: #fff;
+    --bg-input: #2d2c2c;
+    --color-input: #fff;
+    --bg-button: #2d2c2c;
+    --color-button: #ccc;
+    --bg-button-hover: #3c3a3a;
+    --color-esqueceu-senha-hover: #ccc;
+    
+
+}
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--bg-pagina);
+    transition: all 0.9s;
+}
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 340px;
+    padding: 2rem;
+    background: var(--bg-container);
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--color-container);
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+hr{
+    border: 2px solid #3d3e3c;
+}
+
+form {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.frm-linha {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.frm-linha label {
+    font-size: 1.2rem;
+    margin-bottom: 7px;
+
+}
+
+.frm-linha input {
+    padding: 15px;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid #191818;
+    font-size: 1.2rem;
+    background: var(--bg-input);
+    color: var(--color-input);
+    
+}
+
+.frm-linha button {
+    background: var(--bg-button);
+    border: 1px solid #191818;
+    padding: 7px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    color: var(--color-button);
+    cursor: pointer;
+    height: 40px;
+    font-size: 1.3;
+    outline: none;
+
+}
+
+.frm-linha button:hover {
+    background: var(--bg-button-hover);
+    transition: all 0.5s;
+}
+
+div.esqueceu-senha {
+    text-align: right;
+    margin-top: 5px;
+
+}
+
+div.esqueceu-senha a {
+    text-decoration: none;
+    color: #939393;
+    
+}
+
+div.esqueceu-senha a:hover {
+    color: var(--color-esqueceu-senha-hover);
+}
+
+.config {
+    color: var(--color-input);
+}
